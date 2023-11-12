@@ -1,0 +1,84 @@
+$color_1: #fff;
+$color_2: var(--primary-color);
+$background-color_1: #fff;
+
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+	p {
+		font-size: 2.5rem;
+		color: $color_1;
+		text-transform: capitalize;
+		position: relative;
+		&::after {
+			content: '';
+			width: 2.5rem;
+			height: 2px;
+			background-color: $background-color_1;
+			position: absolute;
+			bottom: -1rem;
+			left: 50%;
+			transform: translate(-50%, 50%);
+		}
+	}
+	span {
+		font-size: 1.6rem;
+		color: $color_1;
+		cursor: pointer;
+		&:hover {
+			color: $color_2;
+		}
+	}
+}
+.category-1 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/remeras-category.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.category-2 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/hoodies-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-3 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/jeans-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-4 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/accesorios-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-5 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/formal-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-6 {
+	background-image: linear-gradient(#00000080, #00000080), url('../assets/mochilas-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

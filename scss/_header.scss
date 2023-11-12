@@ -1,0 +1,152 @@
+$color_1: #000;
+$color_2: var(--dark-color);
+$color_3: #fff;
+$color_4: #777;
+$font-family_1: "noodlee";
+$font-family_2: inherit;
+$background-color_1: var(--background-color);
+$background-color_2: var(--primary-color);
+$background-color_3: #fff;
+
+/* 					EL NAV			 */
+.container-hero {
+	background-color: $background-color_1;
+}
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	i {
+		font-size: 3.3rem;
+	}
+}
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	i {
+		font-size: 3rem;
+	}
+	h1 {
+		a {
+			text-decoration: none;
+			color: $color_1;
+			font-family: $font-family_1;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+	}
+}
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+	.fa-user {
+		font-size: 3rem;
+		color: $color_2;
+		padding-right: 2.5rem;
+		border-right: 1px solid #e2e2e2;
+	}
+	.fa-basket-shopping {
+		font-size: 3rem;
+		color: $color_2;
+		padding-left: 1rem;
+	}
+}
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+}
+.container-navbar {
+	background-color: $background-color_2;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	.fa-bars {
+		display: none;
+	}
+}
+.menu {
+	display: flex;
+	gap: 2rem;
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		font-size: 1.3rem;
+		color: $color_2;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		&::after {
+			content: '';
+			width: 1.5rem;
+			height: 1px;
+			background-color: $background-color_3;
+			position: absolute;
+			bottom: -3px;
+			left: 50%;
+			transform: translate(-50%, 50%);
+			opacity: 0;
+			transition: all 0.3s ease;
+		}
+		&:hover {
+			&::after {
+				opacity: 1;
+			}
+			color: $color_3;
+		}
+	}
+}
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 2rem;
+	background-color: $background-color_3;
+	height: 4.4rem;
+	overflow: hidden;
+	input {
+		outline: none;
+		font-family: $font-family_2;
+		border: none;
+		width: 25rem;
+		font-size: 1.4rem;
+		padding: 0 2rem;
+		color: $color_4;
+		cursor: pointer;
+		&::-webkit-search-cancel-button {
+			appearance: none;
+		}
+	}
+	.btn-search {
+		border: none;
+		background-color: $background-color_2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 1rem;
+	}
+}
+.btn-search {
+	i {
+		font-size: 2rem;
+		color: $color_3;
+	}
+}

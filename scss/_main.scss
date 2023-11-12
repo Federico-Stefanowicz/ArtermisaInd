@@ -1,0 +1,43 @@
+$color_1: var(--primary-color);
+$color_2: var(--dark-color);
+$color_3: #777;
+$background-color_1: var(--background-color);
+$background-color_2: #fff;
+
+.main-content {
+	background-color: $background-color_1;
+}
+.container-features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	padding: 3rem 0;
+}
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	background-color: $background-color_2;
+	border-radius: 1rem;
+	padding: 1.5rem 0;
+	i {
+		font-size: 2.7rem;
+		color: $color_1;
+	}
+}
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	span {
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: $color_2;
+	}
+	p {
+		color: $color_3;
+		font-weight: 500;
+	}
+}
+

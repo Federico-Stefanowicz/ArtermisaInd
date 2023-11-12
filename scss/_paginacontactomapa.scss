@@ -1,0 +1,12 @@
+$background-color_1: var(white);
+$background-color_2: #fff;
+
+.main-content-maps {
+	background-color: $background-color_1;
+}
+.maps {
+	border: 1px solid grey;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	background-color: $background-color_2;
+}

@@ -1,0 +1,36 @@
+$color_1: #777;
+$color_2: #fff;
+$background-color_1: #fff;
+$background-color_2: black;
+$background-color_3: grey;
+
+.top-products {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+.container-options {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+	span {
+		color: $color_1;
+		background-color: $background-color_1;
+		padding: 0.7rem 3rem;
+		font-size: 1.4rem;
+		text-transform: capitalize;
+		border-radius: 2rem;
+		cursor: pointer;
+		&:hover {
+			background-color: $background-color_2;
+			color: $color_2;
+		}
+	}
+	span.active {
+		background-color: $background-color_3;
+		color: $color_2;
+	}
+}
+
