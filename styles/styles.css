@@ -166,7 +166,7 @@ html {
 	border-radius: 2rem;
 	background-color: #fff;
 	height: 4.4rem;
-	overflow: hidden;
+	
 }
 
 .search-form input {
@@ -860,11 +860,16 @@ html {
 		grid-template-rows: repeat(2, 15rem);
 	}
 
-	.container-blogs {
-		overflow: hidden;
-		grid-template-columns: 1fr 1fr;
 
-		height: 52rem;
+	.blogs {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr 1fr;
+		height: 260rem;
 	}
 
 	.menu-footer {
@@ -884,6 +889,11 @@ html {
 
 @media (max-width: 468px) {
 
+
+	.blogs {
+		
+		height: 198rem;
+	}
 
 	.content-banner {
 		max-width: 50rem;
@@ -936,15 +946,6 @@ html {
 
 	.gallery {
 		grid-template-rows: repeat(2, 20rem);
-	}
-
-	.blogs {
-		padding: 2rem;
-	}
-
-	.container-blogs {
-		grid-template-columns: 1fr;
-		height: 75rem;
 	}
 
 	.content-blog h3 {
@@ -1021,7 +1022,7 @@ html {
 
 .container-blogs {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	gap: 3rem;
 }
 
